@@ -90,8 +90,8 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Grafana',
-    Svg: require('@site/static/img/grafana.svg').default,
+    title: 'Prometheus Stack',
+    Svg: require('@site/static/img/prometheus.svg').default,
     description: (
       <>
       </>

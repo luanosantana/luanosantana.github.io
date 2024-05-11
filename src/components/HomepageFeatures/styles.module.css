@@ -16,8 +16,10 @@
   border-radius: 4%;
   padding: 1rem;
   margin: 1.3rem;
+  opacity: 0.9;
 }
 
 .border:hover {
   border: 1px solid var(--ifm-color-primary);
+  opacity: 1;
 }
