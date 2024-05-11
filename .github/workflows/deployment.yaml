@@ -1,4 +1,4 @@
-name: Build
+name: Deployment
 run-name: ${{ github.actor }} - ${{ github.event_name }}
 on:
   push:
