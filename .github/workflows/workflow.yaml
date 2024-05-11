@@ -1,5 +1,7 @@
 name: Deployment
 run-name: ${{ github.actor }} - ${{ github.event_name }}
+permissions:
+  id-token: write
 on: [push]
 jobs:
   deploy:
