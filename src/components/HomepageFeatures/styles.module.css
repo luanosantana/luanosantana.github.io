@@ -1,11 +1,23 @@
 .features {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 2rem 0;
   width: 100%;
 }
 
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
+}
+
+.border {
+  border: 0.5px solid var(--ifm-color-primary-dark);
+  border-radius: 4%;
+  padding: 1rem;
+  margin: 1.3rem;
+}
+
+.border:hover {
+  border: 1px solid var(--ifm-color-primary);
 }

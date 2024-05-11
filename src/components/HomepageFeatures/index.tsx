@@ -10,46 +10,137 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Azure Cloud',
+    Svg: require('@site/static/img/cloud.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Kubernetes',
+    Svg: require('@site/static/img/kubernetes.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Docker',
+    Svg: require('@site/static/img/docker.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
       </>
     ),
   },
+  {
+    title: 'MaaS',
+    Svg: require('@site/static/img/maas.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
+  {
+    title: 'Terraform/OpenTofu',
+    Svg: require('@site/static/img/opentofu.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
+  {
+    title: 'Pulumi',
+    Svg: require('@site/static/img/pulumi.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
+  {
+    title: 'Ansible',
+    Svg: require('@site/static/img/ansible.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
+  {
+    title: 'ArgoCD',
+    Svg: require('@site/static/img/Argo-CD.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
+  {
+    title: 'Juju',
+    Svg: require('@site/static/img/juju.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
+  {
+    title: 'Newrelic',
+    Svg: require('@site/static/img/newrelic.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
+  {
+    title: 'Grafana',
+    Svg: require('@site/static/img/grafana.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
+  {
+    title: 'Golang',
+    Svg: require('@site/static/img/gopher.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
+  {
+    title: 'Python',
+    Svg: require('@site/static/img/python-logo.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
+  {
+    title: 'Gitlab',
+    Svg: require('@site/static/img/gitlab.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
+  {
+    title: 'Github',
+    Svg: require('@site/static/img/github.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
+
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--2 ') + styles.border}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg className={styles.featureSvg} role="img"/>
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className="text--center">
+        {/*<Heading as="h5">{title}</Heading>*/}
+        <p>{title}</p>
       </div>
     </div>
   );
